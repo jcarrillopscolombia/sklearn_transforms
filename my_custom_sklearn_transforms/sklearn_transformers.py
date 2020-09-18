@@ -17,8 +17,9 @@ class DropColumns(BaseEstimator, TransformerMixin):
         return data.drop(labels=self.columns, axis='columns')
 
 class BalanceData(BaseEstimator, TransformerMixin):
-    def __init__(self, columns):
-        self.columns = columns
+    def __init__(self):
+        '''
+        '''
 
     def fit(self, X, y=None):
         return self
